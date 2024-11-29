@@ -4,6 +4,4 @@ venv
 .env
 .venv
 __pycache__
-continuous_delivery/
-upload.py
 

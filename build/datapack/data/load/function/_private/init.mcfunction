@@ -1,5 +1,5 @@
 
-#> your_namespace:_private/init
+#> universal_manual:_private/init
 #
 # @within	???
 #

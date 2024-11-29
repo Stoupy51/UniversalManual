@@ -1,0 +1,11 @@
+{
+	"values": [
+		{
+			"id": "#universal_manual:dependencies",
+			"required": false
+		},
+		"#universal_manual:enumerate",
+		"#universal_manual:resolve"
+	]
+}
+
