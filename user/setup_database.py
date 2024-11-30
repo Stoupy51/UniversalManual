@@ -15,6 +15,12 @@ def main(config: dict) -> dict[str, dict]:
         "id": "minecraft:written_book",
         "item_name": json.dumps(source_lore),
         "max_stack_size": 1,
+        "custom_data": {
+            namespace: {
+                "universal_manual": True,
+                "is_setup": False
+            }
+        },
 
         # Define the crafting recipes
         RESULT_OF_CRAFTING: [
@@ -22,18 +28,17 @@ def main(config: dict) -> dict[str, dict]:
             {"type":"crafting_shapeless","result_count":1,"group":"manual","category":"misc","ingredients":[
                 ingr_repr("minecraft:book"),
                 ingr_repr("minecraft:lapis_block"),
-                ingr_repr("minecraft:book"),
                 ingr_repr("minecraft:gold_block"),
+                ingr_repr("minecraft:book"),
             ]},
 
             # Put the manual in the crafting grid to get the manual back (update the manual)
-            {"type":"crafting_shapeless","result_count":1,"group":"manual","category":"misc","ingredients": [ingr_repr("manual", namespace)]},
+            {"type":"crafting_shapeless","result_count":1,"group":"manual","category":"misc","ingredients": [ingr_repr("universal_manual", namespace)]},
         ],
     }
 
     # Final adjustments, you definitively should keep them!
     add_item_model_component(config, database)
-    add_private_custom_data_for_namespace(config, database)		# Add a custom namespace for easy item detection
     add_smithed_ignore_vanilla_behaviours_convention(database)	# Smithed items convention
     print()
 

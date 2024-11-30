@@ -1,8 +1,11 @@
 {
 	"universal_manual.chest_1_1": "Chest [1/1]",
 	"universal_manual.universal": "Universal",
-	"universal_manual.manual": " Manual",
+	"universal_manual.manual": "Manual",
 	"universal_manual.loaded_universal_manual_v1_0_0": "[Loaded Universal Manual v1.0.0]",
+	"universal_manual": "[Universal Manual]",
+	"universal_manual.loaded_pages_from": " Loaded pages from ",
+	"universal_manual.choose_your_manual": "Choose your manual:\n",
 	"universal_manual_error_this_version_is_made_for_minecraft_1_21_3": "Universal Manual Error: This version is made for Minecraft 1.21.3+.",
 	"universal_manual_error_libraries_are_missingplease_download_the": "Universal Manual Error: Libraries are missing\nplease download the right Universal Manual datapack\nor download each of these libraries one by one:",
 	"universal_manual.smithed_crafter_v0_5_0": "- [Smithed Crafter (v0.5.0+)]"

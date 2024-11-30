@@ -5,24 +5,25 @@
 	"ingredients": [
 		"minecraft:book",
 		"minecraft:lapis_block",
-		"minecraft:book",
-		"minecraft:gold_block"
+		"minecraft:gold_block",
+		"minecraft:book"
 	],
 	"result": {
 		"id": "minecraft:written_book",
 		"count": 1,
 		"components": {
-			"minecraft:item_name": "[{\"translate\":\"universal_manual.universal\", \"color\": \"blue\", \"italic\": false}, {\"translate\":\"universal_manual.manual\", \"color\": \"yellow\"}]",
+			"minecraft:item_name": "[{\"translate\":\"universal_manual.universal\", \"color\": \"blue\", \"italic\": false}, {\"text\":\" \"}, {\"translate\":\"universal_manual.manual\", \"color\": \"yellow\"}]",
 			"minecraft:max_stack_size": 1,
-			"minecraft:item_model": "universal_manual:universal_manual",
 			"minecraft:custom_data": {
 				"universal_manual": {
-					"universal_manual": true
+					"universal_manual": true,
+					"is_setup": false
 				},
 				"smithed": {
 					"ignore": {"functionality": true,"crafting": true}
 				}
-			}
+			},
+			"minecraft:item_model": "universal_manual:universal_manual"
 		}
 	}
 }

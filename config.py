@@ -9,13 +9,7 @@ IGNORE_UNSET: bool = True                          # If True, the program will i
 BUILD_FOLDER: str = f"{ROOT}/build"                 # Folder where the final datapack and resource pack are built
 ASSETS_FOLDER: str = f"{ROOT}/assets"               # Folder containing the all assets (textures, sounds, ... folders) for the datapack and resource pack
 LIBS_FOLDER: str = f"{ROOT}/libs"                   # The libraries are copied to the build destination, and merged with the datapack using Weld
-BUILD_COPY_DESTINATIONS: tuple[list, list] = (
-	[
-		"D:/latest_snapshot/world/datapacks",
-		"E:/my_folders/advanced_desktop/python_datapack/src/python_datapack/dependencies/datapack/Universal Manual.zip"
-	],
-	["D:/minecraft/snapshot/resourcepacks"]
-)
+BUILD_COPY_DESTINATIONS: tuple[list, list] = (["D:/latest_snapshot/world/datapacks"],["D:/minecraft/snapshot/resourcepacks"])
 
 
 # Dev constants
@@ -34,7 +28,8 @@ DESCRIPTION = f"{PROJECT_NAME} [{VERSION}] by {AUTHOR}" # Pack description displ
 # Technical constants
 SOURCE_LORE: list[dict] = [
 	{"text":"Universal","color":"blue","italic":False},
-	{"text":" Manual","color":"yellow"}
+	{"text":" "},
+	{"text":"Manual","color":"yellow"}
 ]
 
 

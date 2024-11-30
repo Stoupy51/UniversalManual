@@ -1,10 +1,10 @@
 {
 	"universal_manual": {
 		"id": "minecraft:written_book",
-		"item_name": "[{\"text\": \"Universal\", \"color\": \"blue\", \"italic\": false}, {\"text\": \" Manual\", \"color\": \"yellow\"}]",
+		"item_name": "[{\"text\": \"Universal\", \"color\": \"blue\", \"italic\": false}, {\"text\": \" \"}, {\"text\": \"Manual\", \"color\": \"yellow\"}]",
 		"max_stack_size": 1,
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"item": "minecraft:book"},{"item": "minecraft:lapis_block"},{"item": "minecraft:book"},{"item": "minecraft:gold_block"}]},{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"components": {"minecraft:custom_data": {"universal_manual": {"manual": true}}}}]}],
-		"item_model": "universal_manual:universal_manual",
-		"custom_data": {"universal_manual": {"universal_manual": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+		"custom_data": {"universal_manual": {"universal_manual": true,"is_setup": false},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"item": "minecraft:book"},{"item": "minecraft:lapis_block"},{"item": "minecraft:gold_block"},{"item": "minecraft:book"}]},{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"components": {"minecraft:custom_data": {"universal_manual": {"universal_manual": true}}}}]}],
+		"item_model": "universal_manual:universal_manual"
 	}
 }

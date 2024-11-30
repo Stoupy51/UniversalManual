@@ -10,13 +10,13 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "[{\"translate\":\"universal_manual.universal\", \"color\": \"blue\", \"italic\": false}, {\"translate\":\"universal_manual.manual\", \"color\": \"yellow\"}]",
+								"minecraft:item_name": "[{\"translate\":\"universal_manual.universal\", \"color\": \"blue\", \"italic\": false}, {\"text\":\" \"}, {\"translate\":\"universal_manual.manual\", \"color\": \"yellow\"}]",
 								"minecraft:max_stack_size": 1,
-								"minecraft:item_model": "universal_manual:universal_manual",
 								"minecraft:custom_data": {
-									"universal_manual": {"universal_manual": true},
+									"universal_manual": {"universal_manual": true,"is_setup": false},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
-								}
+								},
+								"minecraft:item_model": "universal_manual:universal_manual"
 							}
 						}
 					]
